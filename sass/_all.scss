@@ -1,0 +1,118 @@
+* {
+    // font-family: "Nunito", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+
+    &::selection {
+        background: var(--color);
+        color: rgb(172, 28, 28);
+    }
+    &:root {
+        // --yellow: #ff652f;
+        --color: #00bbf0;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1.4rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: #222;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--color);
+    }
+}
+
+body {
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.post{
+    background: black;
+    background-color: rgb(21, 25, 26);
+    border-radius: 5px;
+}
+section {
+    min-height: 100vh;
+    padding: 1rem;
+
+    & .btn {
+        padding: 0.7rem 3rem;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 2rem;
+        border-radius: 10px;
+        background-color: rgb(26, 21, 21);
+
+        & i {
+            padding: 0 0.5rem;
+            font-size: 1.8rem;
+        }
+        &:hover {
+            background: var(--color);
+            text-decoration: line-through;
+        }
+    }
+}
+
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #fff4;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--color);
+}
+
+
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+.top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+}

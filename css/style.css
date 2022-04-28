@@ -1,98 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-* {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-}
-*::-moz-selection {
-  background: var(--color);
-  color: rgb(172, 28, 28);
-}
-*::selection {
-  background: var(--color);
-  color: rgb(172, 28, 28);
-}
-*:root {
-  --color: #00bbf0;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-html::-webkit-scrollbar {
-  width: 1.4rem;
-}
-html::-webkit-scrollbar-track {
-  background: #222;
-}
-html::-webkit-scrollbar-thumb {
-  background: var(--color);
-}
-
-body {
-  background: #111;
-  overflow-x: hidden;
-  padding-left: 35rem;
-}
-
-.bg-image {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-.post {
-  background: black;
-  background-color: rgb(21, 25, 26);
-  border-radius: 5px;
-}
-
-section {
-  min-height: 100vh;
-  padding: 1rem;
-}
-section .btn {
-  padding: 0.7rem 3rem;
-  background: #333;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 1rem;
-  font-size: 2rem;
-  border-radius: 10px;
-  background-color: rgb(26, 21, 21);
-}
-section .btn i {
-  padding: 0 0.5rem;
-  font-size: 1.8rem;
-}
-section .btn:hover {
-  background: var(--color);
-  text-decoration: line-through;
-}
-
-.heading {
-  text-align: center;
-  margin: 0 6rem;
-  font-size: 4rem;
-  padding: 1rem;
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2666666667);
-  color: #fff;
-}
-
-.heading span {
-  color: var(--color);
-}
-
 header {
   position: fixed;
   top: 0;
@@ -146,19 +53,6 @@ header .navbar ul li a:hover {
   background: var(--color);
   text-decoration: underline;
   color: black;
-}
-
-#menu {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  background: #333;
-  color: #fff;
-  cursor: pointer;
-  font-size: 2.5rem;
-  padding: 1rem 1.5rem;
-  z-index: 1000;
-  display: none;
 }
 
 .home {
@@ -360,6 +254,112 @@ header .navbar ul li a:hover {
   resize: none;
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+*::-moz-selection {
+  background: var(--color);
+  color: rgb(172, 28, 28);
+}
+*::selection {
+  background: var(--color);
+  color: rgb(172, 28, 28);
+}
+*:root {
+  --color: #00bbf0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 1.4rem;
+}
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+.bg-image {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.post {
+  background: black;
+  background-color: rgb(21, 25, 26);
+  border-radius: 5px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem;
+}
+section .btn {
+  padding: 0.7rem 3rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: rgb(26, 21, 21);
+}
+section .btn i {
+  padding: 0 0.5rem;
+  font-size: 1.8rem;
+}
+section .btn:hover {
+  background: var(--color);
+  text-decoration: line-through;
+}
+
+.heading {
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2666666667);
+  color: #fff;
+}
+
+.heading span {
+  color: var(--color);
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+
 .top {
   position: fixed;
   bottom: 2rem;
@@ -368,7 +368,6 @@ header .navbar ul li a:hover {
   display: none;
 }
 
-/* media queries  */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
