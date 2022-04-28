@@ -5,7 +5,7 @@ header {
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #00204a;
+    background: black;
     // background: #1a1a1a;
     display: flex;
     align-items: center;
@@ -55,7 +55,7 @@ header {
                 &:hover {
                     background: var(--color);
                     text-decoration: underline;
-                    color: black;
+                    color: #fff;
                 }
              
             }

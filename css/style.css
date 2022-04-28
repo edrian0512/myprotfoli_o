@@ -7,7 +7,7 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: #00204a;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,10 +52,11 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   background: var(--color);
   text-decoration: underline;
-  color: black;
+  color: #fff;
 }
 
 .home {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.3)), url("/img/bg5.jpg") center top;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -78,6 +79,9 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 
+.about {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.3)), url("/img/bg4.jpg") center top;
+}
 .about .row {
   display: flex;
   align-items: center;
@@ -122,6 +126,9 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 
+.education {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.3)), url("/img/bg5.jpg") center top;
+}
 .education .box-container {
   display: flex;
   align-items: center;
@@ -168,6 +175,9 @@ header .navbar ul li a:hover {
   background: var(--color);
 }
 
+.portfolio {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.3)), url("/img/bg4.jpg") center top;
+}
 .portfolio .box-container {
   display: flex;
   align-items: center;
@@ -193,6 +203,9 @@ header .navbar ul li a:hover {
   transform: scale(1.3);
 }
 
+.contact {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.3)), url("/img/bg5.jpg") center top;
+}
 .contact .row {
   display: flex;
   align-items: center;
@@ -274,7 +287,7 @@ header .navbar ul li a:hover {
   color: rgb(172, 28, 28);
 }
 *:root {
-  --color: #00bbf0;
+  --color: #ff652f;
 }
 
 html {
@@ -317,21 +330,19 @@ section {
 }
 section .btn {
   padding: 0.7rem 3rem;
-  background: #333;
+  background: rgb(29, 27, 27);
   color: #fff;
   cursor: pointer;
   margin-top: 1rem;
   font-size: 2rem;
   border-radius: 10px;
-  background-color: rgb(26, 21, 21);
-}
-section .btn i {
-  padding: 0 0.5rem;
-  font-size: 1.8rem;
+  background-color: black section .btn i;
+  background-color-padding: 0 0.5rem;
+  background-color-font-size: 1.8rem;
 }
 section .btn:hover {
   background: var(--color);
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 
 .heading {
