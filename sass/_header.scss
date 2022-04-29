@@ -6,13 +6,11 @@ header {
     height: 100%;
     width: 35rem;
     background: black;
-    // background: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    // background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(20, 13, 6, 0.9)),  center top;
     border: 2px solid rgb(33, 30, 30);
 
     & .user {
@@ -54,10 +52,8 @@ header {
                 background-color: rgb(21, 25, 26);
                 &:hover {
                     background: var(--color);
-                    text-decoration: underline;
                     color: #fff;
                 }
-             
             }
         }
     }
